@@ -1,23 +1,41 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import integrationLogos from "@/assets/integration-logos.jpg";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-primary via-primary-light to-background text-white py-20 px-6">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Harness the power<br />
-          of <span className="text-accent">conversations</span>
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-          Transform your meetings into actionable insights with AI-powered conversation analysis
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8 py-3">
-            Start Free Trial
-          </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-3">
-            Watch Demo
-          </Button>
+    <section id="home" className="pt-32 pb-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+            Your AI teammate<br />
+            <span className="relative">
+              who never misses a task.
+              <div className="absolute -bottom-2 left-0 w-full h-1 bg-[hsl(var(--actura-blue))] rounded-full"></div>
+            </span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-[hsl(var(--actura-gray))] mb-8 font-light">
+            Act quick. Act clever.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <Button className="actura-button-primary text-lg px-8 py-4">
+              Download
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button variant="ghost" className="actura-button-secondary text-lg px-8 py-4">
+              Contact sales
+            </Button>
+          </div>
+          
+          <div className="flex items-center justify-center space-x-8 opacity-60">
+            <img 
+              src={integrationLogos} 
+              alt="Integration partners including Zoom, Notion, and Jira" 
+              className="h-8 object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>

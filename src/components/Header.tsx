@@ -2,25 +2,25 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-primary via-primary-light to-primary-lighter text-white py-4 px-6">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-8">
-          <div className="text-2xl font-bold">ACTURA</div>
-          <nav className="hidden md:flex space-x-6">
-            <a href="#" className="hover:text-primary-lighter transition-colors">How it works</a>
-            <a href="#" className="hover:text-primary-lighter transition-colors">Demo</a>
-            <a href="#" className="hover:text-primary-lighter transition-colors">Why Actura</a>
-          </nav>
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4">
+      <nav className="actura-gradient rounded-3xl px-8 py-4 shadow-[var(--shadow-medium)]">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+              <span className="text-[hsl(var(--actura-blue))] font-bold text-lg">A</span>
+            </div>
+            <span className="text-white font-semibold text-xl">Actura</span>
+          </div>
+          
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#home" className="text-white/90 hover:text-white transition-colors">Home</a>
+            <a href="#how-it-works" className="text-white/90 hover:text-white transition-colors">How it works</a>
+            <a href="#why-actura" className="text-white/90 hover:text-white transition-colors">Why Actura?</a>
+            <a href="#pricing" className="text-white/90 hover:text-white transition-colors">Pricing</a>
+            <a href="#contact" className="text-white/90 hover:text-white transition-colors">Contact</a>
+          </div>
         </div>
-        <div className="flex items-center space-x-4">
-          <Button variant="ghost" className="text-white hover:bg-white/10">
-            Sign in
-          </Button>
-          <Button className="bg-white text-primary hover:bg-gray-100">
-            Get started
-          </Button>
-        </div>
-      </div>
+      </nav>
     </header>
   );
 };

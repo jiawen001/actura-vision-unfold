@@ -1,62 +1,34 @@
 import { Button } from "@/components/ui/button";
-import videoCallMockup from "@/assets/video-call-mockup.jpg";
-import integrationLogos from "@/assets/integration-logos.jpg";
+import { Play } from "lucide-react";
 
 const LiveWalkthrough = () => {
   return (
-    <section className="py-20 px-6 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 bg-gradient-to-b from-[hsl(var(--actura-gray-light))/30] to-white">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            See Actura in Action
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Experience how Actura transforms your conversations into actionable insights
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Live walkthrough</h2>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="bg-card rounded-3xl shadow-elegant p-8 mb-8">
-              <img 
-                src={videoCallMockup} 
-                alt="Actura video call interface" 
-                className="w-full rounded-2xl"
-              />
-            </div>
-            <div className="text-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3">
-                Start Live Walkthrough
+        <div className="max-w-4xl mx-auto">
+          <div className="actura-card relative group cursor-pointer">
+            <div className="aspect-video bg-[hsl(var(--actura-gray-light))] rounded-xl flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--actura-blue))/10] to-[hsl(var(--actura-blue-dark))/20]"></div>
+              
+              <Button className="actura-button-primary text-lg px-8 py-4 relative z-10 group-hover:scale-110 transition-transform">
+                <Play className="mr-3 h-6 w-6" />
+                Watch Demo
               </Button>
+              
+              <div className="absolute bottom-4 left-4 text-[hsl(var(--actura-gray))] text-sm">
+                See Actura in action • 3 min demo
+              </div>
             </div>
           </div>
           
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Seamless Integration
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Connect with your favorite tools and platforms. Actura works where you work.
-              </p>
-              <img 
-                src={integrationLogos} 
-                alt="Integration partners" 
-                className="w-full rounded-xl"
-              />
-            </div>
-            
-            <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6">
-              <h4 className="text-xl font-semibold mb-3 text-foreground">
-                Ready to transform your conversations?
-              </h4>
-              <p className="text-muted-foreground mb-4">
-                Join thousands of teams already using Actura to unlock the power of their discussions.
-              </p>
-              <Button className="bg-accent hover:bg-accent/90 text-white">
-                Get Started Today
-              </Button>
-            </div>
+          <div className="text-center mt-8">
+            <p className="text-[hsl(var(--actura-gray))] text-lg">
+              Watch how Actura transforms your meetings into actionable insights in real-time
+            </p>
           </div>
         </div>
       </div>

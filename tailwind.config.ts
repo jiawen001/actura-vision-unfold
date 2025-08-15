@@ -26,8 +26,6 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					light: 'hsl(var(--primary-light))',
-					lighter: 'hsl(var(--primary-lighter))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
@@ -54,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				actura: {
+					blue: 'hsl(var(--actura-blue))',
+					'blue-dark': 'hsl(var(--actura-blue-dark))',
+					'gray-light': 'hsl(var(--actura-gray-light))',
+					gray: 'hsl(var(--actura-gray))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -69,12 +73,6 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
-			},
-			boxShadow: {
-				elegant: 'var(--shadow-elegant)'
-			},
-			transitionTimingFunction: {
-				smooth: 'var(--transition-smooth)'
 			},
 			keyframes: {
 				'accordion-down': {
