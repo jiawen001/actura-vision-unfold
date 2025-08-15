@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				actura: {
+					blue: 'hsl(var(--actura-blue))',
+					'blue-dark': 'hsl(var(--actura-blue-dark))',
+					'gray-light': 'hsl(var(--actura-gray-light))',
+					gray: 'hsl(var(--actura-gray))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
